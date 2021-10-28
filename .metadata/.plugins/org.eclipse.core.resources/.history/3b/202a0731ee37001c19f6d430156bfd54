@@ -1,0 +1,27 @@
+package com.freitas.dev.servelet;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Banco {
+	
+	private static List<Empresa> list = new ArrayList<>();
+	
+	static {
+		Empresa empresa = new Empresa();
+		empresa.setNome("FreitasDev");
+		Empresa empresa2 = new Empresa();
+		empresa2.setNome("Autbank");
+		list.add(empresa2);
+		list.add(empresa);
+	}
+
+	public void add(Empresa empresa) {
+		list.add(empresa);
+	}
+	
+	public List<Empresa> getEmpresa(){
+		return Banco.list;
+	}
+
+}
