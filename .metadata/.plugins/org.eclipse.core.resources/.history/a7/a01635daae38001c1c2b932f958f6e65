@@ -1,0 +1,27 @@
+package com.freitas.dev.action;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.freitas.dev.model.Banco;
+import com.freitas.dev.model.Empresa;
+
+public class RemoveEmpresa {
+
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Banco banco = new Banco();
+		Empresa empresa = new Empresa();
+		
+		String paramId = request.getParameter("id");
+		
+		int id =	Integer.valueOf(paramId);
+		System.out.println(id);
+		
+		banco.remove(id);
+		
+		response.sendRedirect("ListaEmpresas");
+	}
+}

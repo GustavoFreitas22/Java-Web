@@ -1,3 +1,5 @@
 INDEX VERSION 1.131
+C:\Users\Pichau\Desktop\Autbank\Cursos Alura\Java Web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2656876495.index
+\gerenciador\src
 C:\Users\Pichau\Desktop\Autbank\Cursos Alura\Java Web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1532149616.index
 \gerenciador\src

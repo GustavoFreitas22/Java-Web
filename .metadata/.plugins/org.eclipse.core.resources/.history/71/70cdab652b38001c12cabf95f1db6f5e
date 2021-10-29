@@ -1,0 +1,18 @@
+package com.freitas.dev.action;
+
+import java.util.List;
+
+import com.freitas.dev.model.Banco;
+import com.freitas.dev.model.Empresa;
+
+public class ListaEmpresas {
+	
+	public void execute() {
+		Banco banco = new Banco();
+		List<Empresa> list = banco.getEmpresa();
+		
+		RequestDispatcher rd = request.getRequestDispatcher("/ListEmpresas.jsp"); // É a forma de dispachar o objeto para o JSP
+		request.setAttribute("empresa", list); // Define o objeto a ser passado pelo request
+		rd.forward(request, response); // envia para o JSP
+	}
+}

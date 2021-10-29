@@ -1,0 +1,26 @@
+package com.freitas.dev.action;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.freitas.dev.model.Banco;
+import com.freitas.dev.model.Empresa;
+
+public class ListaEmpresas {
+	
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Banco banco = new Banco();
+		List<Empresa> list = banco.getEmpresa();
+		
+		RequestDispatcher rd = request.getRequestDispatcher("/ListEmpresas.jsp"); 
+		request.setAttribute("empresas", list); 
+		rd.forward(request, (ServletResponse) response);
+		System.out.println("Listando meu rei!");
+	}
+}

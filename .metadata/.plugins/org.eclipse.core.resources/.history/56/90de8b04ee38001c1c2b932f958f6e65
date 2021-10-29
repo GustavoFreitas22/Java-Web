@@ -1,0 +1,5 @@
+package com.freitas.dev.action;
+
+public class Logout {
+
+}

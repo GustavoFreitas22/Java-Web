@@ -3,3 +3,27 @@
 1635353986426	Rename resource 'novaEmpresa.html'
 1635354368748	Rename resource 'NovaEmpresa.html'
 1635365572436	Rename resource 'formNovaEmpresa.html'
+1635443778800	Rename type 'ListaEmpresas'
+1635443798984	Rename type 'NovaEmpresa'
+1635448682448	Rename type 'listaEmpresas'
+1635449116064	Rename type 'novaEmpresa'
+1635449132109	Rename type 'removeEmpresa'
+1635450223848	Rename type 'editaEmpresa'
+1635450262168	Rename type 'ListaEmpresas'
+1635450279058	Rename type 'editaEmpresaServlet'
+1635450315150	Rename type 'NovaEmpresa'
+1635450339108	Rename type 'RemoveEmpresa'
+1635450367274	Rename type 'UnicaEntrada'
+1635450398229	Rename type 'update'
+1635509768710	Copy compilation unit
+1635511925972	Copy compilation unit
+1635513388448	Delete element
+1635513393025	Delete element
+1635513396056	Delete element
+1635513398575	Delete element
+1635513402576	Delete element
+1635516791794	Move 5 resources to 'view'
+1635516812707	Move 'hello.html' to 'WEB-INF'
+1635516887125	Delete element
+1635517077735	Copy compilation unit
+1635528329816	Copy file
