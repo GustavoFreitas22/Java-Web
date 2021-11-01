@@ -31,15 +31,15 @@ public class UnicaEntradaServlet extends HttpServlet {
 		/*Verificação de Login*/
 		
 		String paramAcao = request.getParameter("acao");
-		HttpSession sessao = request.getSession();
-		boolean userNaoLogado = (sessao.getAttribute("userLogado")==null); // Capturando o Obejto do HttpSession
-		boolean actionProtected = !(paramAcao.equals("Login")||paramAcao.equals("LoginForm")); // lógica inversa para liberar as páginas
-		
-		if(userNaoLogado && actionProtected ) {
-			response.sendRedirect("entrada?acao=LoginForm");
-			return;
-		}
-		
+//		HttpSession sessao = request.getSession();
+//		boolean userNaoLogado = (sessao.getAttribute("userLogado")==null); // Capturando o Obejto do HttpSession
+//		boolean actionProtected = !(paramAcao.equals("Login")||paramAcao.equals("LoginForm")); // lógica inversa para liberar as páginas
+//		
+//		if(userNaoLogado && actionProtected ) {
+//			response.sendRedirect("entrada?acao=LoginForm");
+//			return;
+//		}
+//		
 		
 		/*Isso daqui é basicamente o controlador generico que consegue criar uma action apartir de uma classe no packge Action*/
 		// Claro sempre usando um pattern!!!
